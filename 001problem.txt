@@ -1,0 +1,24 @@
+Solve for 990(easier), then just add 993, 
+995, 996 & 999 (3983). This is (a)
+
+Count all the numbers divisible by 3:
+From 3 to 990 there are 330 terms.
+The sum is 330(990+3)/2, so (b)=163845
+
+Count all the numbers divisible by 5:
+From 5 to 990 there are 198 terms.
+The sum is 198(990+5)/2, so (c)=98505
+
+Now, the GCD of 3 and 5 is 1, so the LCM 
+should be 3x5=15.
+
+This means every number that divides by 15
+was counted twice(intersection), and it should only be done 
+once. Because of this, you have an extra set of numbers
+started with 15 all the way to 990 that has to be removed
+from (b)&(c).
+
+So from 15 to 990 there are 66 terms, their sum is 
+66(990+15)/2, so (d)=33165
+
+Final answer: (a)+(b)+(c)-(d)=233168
